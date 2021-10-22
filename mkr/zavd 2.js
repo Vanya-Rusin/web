@@ -1,8 +1,12 @@
-function compareNumber(a,b)
-{
-    if(a<b) return 1;
-    if (a===b) return 0;
-    if(a>b) return -1;
-
+function* generateRand(min, max) {
+	for (let i = min; i <= max; i++) {
+		let randomValue = Math.floor(min + Math.random() * (max + 1 - min));
+    yield randomValue;
+  }
 }
-console.log(randomArray.sort(compareNumber));
+const typeArray = [...generateRand(10, 20)];
+
+const newTypeArray = typeArray.filter(value => value > typeArray[0]);
+
+console.log(typeArray);
+console.log(newTypeArray);
