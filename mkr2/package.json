@@ -1,7 +1,7 @@
 {
   "name": "mkr",
   "version": "1.0.0",
-  "description": "7 variant",
+  "description": "3 variant",
   "main": "index.js",
   "scripts": {
     "test": "jest",
